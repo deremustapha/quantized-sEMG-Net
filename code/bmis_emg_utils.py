@@ -19,8 +19,8 @@ from sklearn.model_selection import train_test_split
 
 def get_per_subject_file(subject):
     base_path = os.getcwd().strip('\\code')
-    data_path = "\\data\\mat_data\\subject_{}".format(subject)
-    return base_path + data_path + "\\"   # returns path as 'D:\\AI-Workspace\\sEMG_Classification\\BMIS_EMG_DATA\\data\\mat_data\\subject_1\\'
+    data_path = "/data/mat_data/subject_{}".format(subject)
+    return base_path + data_path + "/"   # returns path as 'D:\\AI-Workspace\\sEMG_Classification\\BMIS_EMG_DATA\\data\\mat_data\\subject_1\\'
 
 
 def segregate_per_gesture(subject, no_gesture=7):
